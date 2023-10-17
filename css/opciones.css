@@ -1,0 +1,108 @@
+/* Estilo general para las tarjetas */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+:root {
+    --clr-primary-1: hsl(0, 0%, 99%);
+    --clr-primary-5: hsl(0, 0%, 100%);
+    --clr-grey-1: hsl(0, 0%, 100%);
+    --clr-grey-9: hsl(212, 33%, 89%);
+    --clr-grey-10: hsl(210, 36%, 96%);
+    --clr-white: #000000;
+    --clr-red-dark: hsl(360, 67%, 44%);
+    --clr-red-light: hsl(360, 71%, 66%);
+    --clr-green-dark: hsl(125, 67%, 44%);
+    --clr-green-light: hsl(125, 71%, 66%);
+    --clr-black: #ffffff;
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    --transition: all 0.3s linear;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --max-width: 1170px;
+    --fixed-width: 620px;
+}
+
+/* Estilo general del cuerpo de la página */
+body {
+    font-family: var(--ff-secondary);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(../img/Fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: var(--clr-black);
+    color: var(--clr-primary-5);
+}
+
+
+h1 {
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Paytone One', sans-serif;
+}
+
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.card {
+    width: 200px;
+    border: 1px solid var(--clr-white);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--clr-white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+
+.card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+
+.card button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.card button:hover {
+    background-color: #2980b9;
+}
+
+
