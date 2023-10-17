@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/log-in.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+      <h2>Login</h2>
+      <form id="login-form">
+        <div class="form-group">
+          <label for="username"><i class="fas fa-user" style="color: white;"></i> Username</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+          <label for="password"><i class="fas fa-lock" style="color: white;" ></i> Password</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+      <div id="google-login">
+        <button id="google-login-button">
+          <i class="fab fa-google"></i> Login with Google
+        </button>
+      </div>
+      <p id="error-message" class="error-message"></p>
+    </div>
+    <script src="javascript/log-in.js"></script>
+</body>
+</html>
+
+
